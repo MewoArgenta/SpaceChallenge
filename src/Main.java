@@ -2,7 +2,7 @@ import java.io.FileNotFoundException;
 
 public class Main {
     public static void main(String[] args){
-        ItemphasesToStacks itemphasesToStacks= new ItemphasesToStacks();
+        Simulation itemphasesToStacks= new Simulation();
         try {
             System.out.println(itemphasesToStacks.phase2ToStack());
         } catch (FileNotFoundException e) {

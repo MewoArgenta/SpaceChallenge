@@ -6,7 +6,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 import java.util.Stack;
-public class ItemphasesToStacks {
+public class Simulation {
     int numberOfItemsPhase1 = 0;
     Stack nameItemsPhase1 = new Stack();
     Stack weightItemsPhase1 = new Stack();
@@ -14,7 +14,7 @@ public class ItemphasesToStacks {
 
 
 // put items from phase 1 into a stack
-    public void phase1ToStack() throws FileNotFoundException {
+    public void loadItems() throws FileNotFoundException {
         File file = new File("phase1.txt");
         Scanner scanner = new Scanner(file);
         while (scanner.hasNextLine()) {
@@ -22,8 +22,9 @@ public class ItemphasesToStacks {
             String [] parts = line.split("=");
             String line1 = parts [0];
             String line2 = parts [1];
+            int line2Int = Integer.parseInt(line2);
             nameItemsPhase1.push(line1);
-            weightItemsPhase1.push(line2);
+            weightItemsPhase1.push(line2Int);
             numberOfItemsPhase1 += 1;
         }
     }
@@ -45,5 +46,7 @@ public class ItemphasesToStacks {
         return itemsPhase2;
     }
     */
+
+
 
 }

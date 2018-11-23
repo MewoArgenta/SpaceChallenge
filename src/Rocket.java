@@ -1,4 +1,6 @@
 public class Rocket implements Spaceship {
+    int totalWeight = 0;
+    int allowedWeight = 0;
 
     /*indicates if the launch was succesful or not
     returns true and is overwritten by U1/U2 class
@@ -18,8 +20,7 @@ public class Rocket implements Spaceship {
    if the rocket can carry such item or false if it will exceed the weight limit.
     */
     public boolean canCarryItem(){
-        int totalWeight = 0;
-        int allowedWeight = 0;
+
         int item = 0;
         boolean canCarryItem =false;
         if ((item + totalWeight) < allowedWeight) {
@@ -34,9 +35,9 @@ public class Rocket implements Spaceship {
      */
     public int carry(){
         int addedWeight = 0;
-        int weight = 0;
+        int weightItem = 0;
         boolean canCarryItem = canCarryItem();
-        if (canCarryItem = true){ addedWeight = weight;
+        if (canCarryItem = true){ addedWeight = weightItem;
         }
         return addedWeight;
     }

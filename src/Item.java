@@ -1,11 +1,5 @@
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.Scanner;
-import java.util.Stack;
-
-
 public class Item {
-    ItemphasesToStacks itemphasesToStacks = new ItemphasesToStacks();
+    Simulation itemphasesToStacks = new Simulation();
     String name = itemphasesToStacks.lengthStackPhase1;
     int weight = 0;
 
