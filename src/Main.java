@@ -2,9 +2,9 @@ import java.io.FileNotFoundException;
 
 public class Main {
     public static void main(String[] args){
-        Item item = new Item();
+        ItemphasesToStacks itemphasesToStacks= new ItemphasesToStacks();
         try {
-            System.out.println(item.phase1ToStack());
+            System.out.println(itemphasesToStacks.phase2ToStack());
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
