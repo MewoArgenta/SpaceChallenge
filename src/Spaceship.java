@@ -11,7 +11,7 @@ public interface Spaceship {
 
 
     /* method that returns true or false
-    indicating if the land was succesful or not
+    indicating if the land was successful or not
      */
     boolean land();
 
@@ -29,7 +29,7 @@ public interface Spaceship {
     /* a method that also takes an Item object
     and updates the current weight of the rocket.
      */
-    int carry();
+    void carry();
 
 
 
