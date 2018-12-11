@@ -76,7 +76,7 @@ public class Rocket implements Spaceship {
     public void carry() {
         Item poppedItem = Simulation.items.pop();
         int weightItem = poppedItem.getWeight();
-        totalWeight = ownWeight + weightItem;
+        totalWeight += totalWeight + weightItem;
             }
 
 }

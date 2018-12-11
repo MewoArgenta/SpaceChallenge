@@ -11,15 +11,21 @@ public class U1 extends Rocket {
 
     public boolean launch() {
         boolean launchSucceeded = false;
-        if (Math.random() > (0.05 * totalWeight / allowedWeight)){
+        if (Math.random() > (0.05 * totalWeight / allowedWeight)) {
             launchSucceeded = true;
-    }
+        }
+            else {
+                System.out.println("Oh no! Rocket crashed while launching.");
+            }
+
     return launchSucceeded;
     }
     public boolean land() {
         boolean landSucceeded = false;
         if (Math.random() > (0.01 * totalWeight / allowedWeight)){
-            landSucceeded = true;
+            landSucceeded = true;}
+            else {
+                System.out.println("Oh no! Rocket crashed while landing");
         }
         return landSucceeded;
     }

@@ -5,7 +5,7 @@ public class U2 extends  Rocket {
     public U2() {
         super.setTotalWeight(18000);
         super.setAllowedWeight(29000);
-        super.setOwnWeight(10000);
+        super.setOwnWeight(18000);
 
     }
 
